@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript - Homework -B2+3</title>
+
+    <!-- My css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- My css -->
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap CSS -->
+  </head>
+
+  <body style="background-color: #eee">
+    <h1 style="font-size: 3rem; text-align: center">
+      Javascript - Homework - B4
+    </h1>
+
+    <div class="container py-3">
+      <div class="row">
+        <!-- Bài tập 1 -->
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-header">
+              Bài tập 1: Xuất 3 số theo thứ tự tăng dần
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Nhập số thứ 1:</label>
+                <input id="number_1" type="number" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Nhập số thứ 2:</label>
+                <input id="number_2" type="number" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Nhập số thứ 3:</label>
+                <input id="number_3" type="number" class="form-control" />
+              </div>
+              <button class="btn btn-primary" onclick="sapXep()">
+                Sắp xếp
+              </button>
+            </div>
+            <div id="showSapXep" class="card-footer text-muted"></div>
+          </div>
+        </div>
+        <!-- Bài tập 1 -->
+        <!-- Bài tập 2 -->
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-header">Bài tập 2: Chương trình "Chào hỏi"</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="">Chọn thành viên:</label>
+                <select class="form-control" name="" id="chonThanhVien">
+                  <option value="B">Bố</option>
+                  <option value="M">Mẹ</option>
+                  <option value="A">Anh trai</option>
+                  <option value="E">Em gái</option>
+                </select>
+              </div>
+              <button class="btn btn-success" onclick="chonThanhVien()">
+                Gửi lời chào
+              </button>
+            </div>
+            <div id="showLoiChao" class="card-footer text-muted"></div>
+          </div>
+        </div>
+        <!-- Bài tập 2 -->
+        <!-- Bài tập 3 -->
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-header">
+              Bài tập 3: Đếm số chẵn số lẻ
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Nhập số thứ 1:</label>
+                <input id="num_1" type="number" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Nhập số thứ 2:</label>
+                <input id="num_2" type="number" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Nhập số thứ 3:</label>
+                <input id="num_3" type="number" class="form-control" />
+              </div>
+              <button id="demChan" class="btn btn-warning" onclick="demChanLe()">
+                Đếm
+              </button>
+            </div>
+            <div id="showChanLe" class="card-footer text-muted"></div>
+          </div>
+        </div>
+        <!-- Bài tập 3 -->
+        <!-- Bài tập 4 -->
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-header">
+              Bài tập 4: Đoán hình tam giác
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Nhập độ dài cạnh 1:</label>
+                <input id="doDaiCanh1" type="number" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Nhập độ dài cạnh 2:</label>
+                <input id="doDaiCanh2" type="number" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Nhập độ dài cạnh 3:</label>
+                <input id="doDaiCanh3" type="number" class="form-control" />
+              </div>
+              <button class="btn btn-danger" onclick="doanTamGiac()">
+                Dự đoán
+              </button>
+            </div>
+            <div id="showTamGiac" class="card-footer text-muted"></div>
+          </div>
+        </div>
+        <!-- Bài tập 4 -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="./Bai_Tap_1.js"></script>
+    <script src="./Bai_Tap_2.js"></script>
+    <script src="./Bai_Tap_3.js"></script>
+    <script src="./Bai_Tap_4.js"></script>
+
+    <!-- jQuery -->
+  </body>
+</html>
